@@ -1,0 +1,21 @@
+#sideBar {
+  transition: width 300ms linear;
+}
+svg,
+img {
+  cursor: pointer;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+* {
+  font-family: "Roboto", Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.placeholder {
+  color: rgb(34, 34, 105);
+  left: 2px;
+  top: -10px;
+  pointer-events: none;
+  font-size: small;
+  background-color: white;
+  padding: 1px 4px;
+}

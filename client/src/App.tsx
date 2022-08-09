@@ -1,13 +1,22 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button";
-import Hamburger from "./components/Hamburger";
 import Home from "./pages/Home/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Register from "./pages/Register/Register";
+import NavBar from "./components/NavBar/NavBar";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
   return (
     <>
-      <Home />
+      <BrowserRouter>
+        <NavBar />
+        <SideBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

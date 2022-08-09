@@ -31,87 +31,95 @@ import { FiHelpCircle } from "react-icons/fi";
 
 const SideBar = () => {
   return (
-    <div className=" absolute left-0  ">
+    <div className=" absolute left-0 hidden" id="sideBar">
       <div className=" flex flex-col ">
-        <div className="flex  py-2 hover:bg-gray-200 hover:font-bold pr-[8rem] pl-6">
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
           <FaHome className="mr-4 h-6 w-6 " />
-          <div className="font ">Home</div>
+          <div className="font cursor-pointer">Home</div>
         </div>
-        <div>
-          <FaRegCompass />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <FaRegCompass className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Explore</div>
         </div>
-        <div>
-          <FaCamera />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <FaCamera className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Shorts</div>
         </div>
-        <div>
-          <MdSubscriptions />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mb-2">
+          <MdSubscriptions className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Subscriptions</div>
         </div>
         <hr />
-        <div>
-          <MdVideoLibrary />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mt-2">
+          <MdVideoLibrary className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Library</div>
         </div>
-        <div>
-          <MdHistory />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <MdHistory className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">History</div>
         </div>
-        <div>
-          <RiVideoLine />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <RiVideoLine className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Your Videos</div>
         </div>
-        <div>
-          <FaRegClock />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <FaRegClock className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Watch Later</div>
         </div>
-        <div>
-          <BiLike />
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mb-2">
+          <BiLike className="mr-4 h-6 w-6 " />
+          <div className="font cursor-pointer">Liked Videos</div>
         </div>
       </div>
       <div>
-        <div className="text-gray-600 font-xl">SUBSCRIPTIONS</div>
-        <div className="flex items-center">
-          <img src={download} className="w-5 h-5 mx-4 " />
-          <div>VOX</div>
+        <div className="text-gray-600 font-xl pl-8">SUBSCRIPTIONS</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mt-2">
+          <img src={download} className="w-5 h-5 mr-4 " />
+          <div className="cursor-pointer">VOX</div>
         </div>
-        <div className="flex items-center">
-          <img src={download} className="w-5 h-5 mx-4 " />
-          <div>NEPAl</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <img src={download} className="w-5 h-5 mr-4 " />
+          <div className="cursor-pointer">NEPAl</div>
         </div>
-        <div className="flex items-center">
-          <img src={download} className="w-5 h-5 mx-4 " />
-          <div>MSN</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <img src={download} className="w-5 h-5 mr-4 " />
+          <div className="cursor-pointer">MSN</div>
         </div>
-        <div className="flex items-center">
-          <img src={download} className="w-5 h-5 mx-4 " />
-          <div>PEWDIEPIE</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mb-2">
+          <img src={download} className="w-5 h-5 mr-4 " />
+          <div className="cursor-pointer">PEWDIEPIE</div>
         </div>
       </div>
       <div>
-        <div className="text-gray-600 font-xl">MORE FROM YOUTUBE</div>
-        <div className="">
-          <RiGamepadLine />
-          <div>Gaming</div>
+        <div className="text-gray-600 font-xl pl-8">MORE FROM YOUTUBE</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8 mt-2">
+          <RiGamepadLine className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Gaming</div>
         </div>
-        <div className="">
-          <RiLiveLine />
-          <div>Live</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <RiLiveLine className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Live</div>
         </div>
-        <div className="">
-          <RiTrophyLine />
-          <div>Sports</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <RiTrophyLine className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Sports</div>
         </div>
         <hr />
-        <div className="">
-          <RiSettings2Line />
-          <div>Settings</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <RiSettings2Line className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Settings</div>
         </div>
-        <div className="">
-          <MdOutlineReport />
-          <div>Report</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <MdOutlineReport className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Report</div>
         </div>
-        <div className="">
-          <FiHelpCircle />
-          <div>Help</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <FiHelpCircle className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Help</div>
         </div>
-        <div className="">
-          <MdOutlineFeedback />
-          <div>Send feedback</div>
+        <div className="flex  py-2 hover:bg-gray-200 hover:font-medium pr-[8rem] pl-8">
+          <MdOutlineFeedback className="mr-4 h-6 w-6 " />
+          <div className="cursor-pointer">Send feedback</div>
         </div>
       </div>
     </div>

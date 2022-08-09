@@ -9,13 +9,13 @@ import { FaBell, FaVideo, FaYoutube } from "react-icons/fa";
 
 const NavBar: React.FC = (): JSX.Element => {
   return (
-    <nav className="flex items-center my-2">
-      <div className="mx-4 flex justify-between">
+    <nav className="flex items-center my-2 ">
+      <div className="mx-4 flex justify-between ">
         <Hamburger />
 
         <FaYoutube className="w-7 h-7 mx-4" />
       </div>
-      <div className="m-auto flex items-center">
+      <div className="m-auto flex items-center w-[50%]">
         <SearchBar />
         <img src={microphone} className="w-5 h-5 mx-4 " />
       </div>
